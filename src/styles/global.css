@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "BerkaLight";
+  src: url("../assets/fonts/BerkaLight9YGyn.eot");
+  src:
+    url("../assets/fonts/BerkaLight9YGyn.eot") format("embedded-opentype"),
+    url("../assets/fonts/BerkaLight9YGyn.woff2") format("woff2"),
+    url("../assets/fonts/BerkaLight9YGyn.woff") format("woff"),
+    url("../assets/fonts/BerkaLight9YGyn.ttf") format("truetype"),
+    url("../assets/fonts/BerkaLight9YGyn.svg#BerkaLight9YGyn") format("svg");
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,12 +29,39 @@
     @apply mx-auto max-w-[728px] p-5;
   }
 }
-
+* {
+  font-family: "BerkaLight";
+}
 body {
-  font-family: Verdana, sans-serif;
-  margin: auto;
+  max-width: 90rem;
+  background-color: #121120;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+.cloud-gradient {
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    45deg,
+    #ffffff,
+    #a3e6ff,
+    #6dd5fa,
+    #2980b9,
+    #9333ea
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    -65deg,
+    #ffffff,
+    #a3e6ff,
+    #6dd5fa,
+    #2980b9,
+    #9333ea,
+    #121120
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 a {
   @apply text-link;
 }

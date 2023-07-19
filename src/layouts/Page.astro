@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
+// import Header from "../components/Header.astro";
+import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 
 type Props = {
@@ -23,8 +24,9 @@ const description = frontmatter?.description || Astro.props.description;
   </head>
 
   <body>
-    <Header />
-    <main class="container prose">
+    <Nav />
+    <!-- <Header /> -->
+    <main>
       <slot />
     </main>
     <Footer />

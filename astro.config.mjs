@@ -5,8 +5,13 @@ import solidJs from "@astrojs/solid-js";
 import tailwind from "@astrojs/tailwind";
 import { SITE_URL } from "./src/consts.ts";
 
+import compress from "astro-compress";
+
 // https://astro.build/config
 export default defineConfig({
+  experimental: {
+    assets: true,
+  },
   site: SITE_URL,
   markdown: {
     drafts: true,
@@ -21,5 +26,6 @@ export default defineConfig({
     sitemap(),
     solidJs(),
     tailwind(),
+    compress(),
   ],
 });

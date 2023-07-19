@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Page.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Hero from '../components/Hero.astro'
 import LatestPosts from "../components/LatestPosts.astro";
 import { Image } from "astro:assets";
 import heroImage from "../../public/placeholder-social.jpg";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <Hero />
   <Image
     width={668}
     src={heroImage}

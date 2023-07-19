@@ -12,7 +12,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@astrojs/mdx": "0.19.7",
@@ -20,13 +21,19 @@
     "@astrojs/sitemap": "2.0.0",
     "@astrojs/solid-js": "2.2.0",
     "@astrojs/tailwind": "4.0.0",
+    "@astropub/icons": "^0.2.0",
     "astro": "2.8.4",
+    "astro-compress": "1.1.49",
+    "astro-heroicons": "^0.3.0",
     "fuse.js": "6.6.2",
     "solid-js": "1.7.8",
     "tailwindcss": "3.3.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "0.5.9",
+    "autoprefixer": "10.4.14",
+    "daisyui": "3.2.1",
+    "prettier-plugin-astro": "^0.11.0",
     "prettier-plugin-tailwindcss": "0.4.1"
   }
 }

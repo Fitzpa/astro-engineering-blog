@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        berka: ["BerkaLight", "sans-serif"],
+      },
       colors: {
         header: "#000",
         "header-foreground": "#fff",
@@ -24,5 +27,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
