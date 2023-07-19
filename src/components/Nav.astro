@@ -1,7 +1,7 @@
 ---
 import Bars3 from 'astro-heroicons/solid/Bars3.astro';
-import GithubLogo from '../assets/images/tech-stack/akar-icons_github-fill.svg';
-import FitzLogo from '../assets/images/fitz-logo.svg';
+import GithubLogo from 'src/assets/images/tech-stack/akar-icons_github-fill.svg';
+import FitzLogo from 'src/assets/images/fitz-logo.svg';
 ---
 <div class="navbar max-w-[90rem]">
   <div class="navbar-start">
@@ -24,8 +24,8 @@ import FitzLogo from '../assets/images/fitz-logo.svg';
         <li><a href="/blog">Blog</a></li>
       </ul>
     </div>                             
-    <a href="https://github.com/Fitzpa" class="btn btn-sm btn-circle btn-outline hidden sm:inline-block mr-2">
-       <img src={GithubLogo.src} width={GithubLogo.width} height={GithubLogo.height} alt="Github Logo" />
+    <a href="https://github.com/Fitzpa" class="btn btn-sm btn-circle btn-outline hidden sm:inline-block mr-2 relative z-0">
+       <img src={GithubLogo.src} width={GithubLogo.width} height={GithubLogo.height} alt="Github Logo" class="relative z-10" />
     </a>
   </div>
 </div>
