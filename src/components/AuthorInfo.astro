@@ -1,7 +1,7 @@
 ---
 import { getEntryBySlug, getCollection } from "astro:content";
 import Heading from "./Heading.astro";
-import { Image } from "astro:assets";
+import UserIcon from 'astro-heroicons/solid/UserCircle.astro'
 
 export interface Props {
   authorId: string;
@@ -38,13 +38,7 @@ const authorPosts = posts
   <Heading headingLevel={headingLevel} class="text-xl">
     {firstname}&nbsp;{lastname}
   </Heading>
-  <Image
-    class="h-24 w-24 rounded-full"
-    src={avatar}
-    width={96}
-    width={96}
-    alt={`${firstname} ${lastname}`}
-  />
+  <UserIcon height="96px" width="96px" />
   <div><Content /></div>
 
   <div class="flex flex-col gap-2">
