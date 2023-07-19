@@ -35,19 +35,20 @@ module.exports = {
   },
   daisyui: {
     themes: [
-      {
-        mytheme: {
-          "primary": "#4728D3",
-          "secondary": "#663BC2",
-          "accent": "#1dcdbc",
-          "neutral": "#2b3440",
-          "base-100": "#ffffff",
-          "info": "#3abff8",
-          "success": "#36d399",
-          "warning": "#fbbd23",
-          "error": "#f87272",
-        },
-      },
+      "night"
+      // {
+      //   mytheme: {
+      //     "primary": "#4728D3",
+      //     "secondary": "#663BC2",
+      //     "accent": "#1dcdbc",
+      //     "neutral": "#2b3440",
+      //     "base-100": "#ffffff",
+      //     "info": "#3abff8",
+      //     "success": "#36d399",
+      //     "warning": "#fbbd23",
+      //     "error": "#f87272",
+      //   },
+      // },
     ],
   },
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
