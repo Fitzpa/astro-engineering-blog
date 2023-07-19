@@ -22,9 +22,9 @@ const description = frontmatter?.description || Astro.props.description;
     <BaseHead title={title} description={description} />
   </head>
 
-  <body class="mx-auto">
+  <body class="mx-auto justify-start min-h-screen">
     <Nav />
-    <main>
+    <main class="grid min-h-full place-items-center bg-[#121120] mx-auto px-6 py-24 sm:py-32 lg:px-8">
       <slot />
     </main>
     <Footer />
