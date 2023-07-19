@@ -1,8 +1,11 @@
+import { getImage } from 'astro:assets'
+import WhenIWork from '@/assets/images/company-logos/when-i-work-logo.svg'
+const whenIWork = await getImage({src: WhenIWork})
 export const companiesWorkedWith = [
   {
     name: "When I Work",
     href: "/",
-    logo: "../src/assets/images/company-logos/when-i-work-logo.svg",
+    logo: whenIWork.src,
     width: "250",
     height: "64",
     lightBg: true,
