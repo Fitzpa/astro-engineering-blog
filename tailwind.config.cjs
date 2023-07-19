@@ -27,7 +27,6 @@ module.exports = {
             a: {
               color: theme('colors.link'),
             },
-
           },
         },
       }),
