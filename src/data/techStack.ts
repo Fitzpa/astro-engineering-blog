@@ -6,7 +6,7 @@ export const techStack: Array<{
 }> = [
   {
     name: "github",
-    src: "../src/assets/images/tech-stack/akar-icons_github-fill.svg",
+    src: "../src/assets/images/tech-stack/github.svg",
     link: "https://github.com/",
   },
   {
