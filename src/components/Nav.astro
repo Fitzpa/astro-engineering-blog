@@ -1,6 +1,6 @@
 ---
 import Bars3 from 'astro-heroicons/solid/Bars3.astro';
-import GithubLogo from 'src/assets/images/tech-stack/akar-icons_github-fill.svg';
+import GithubLogo from '../assets/images/tech-stack/github.svg';
 import FitzLogo from 'src/assets/images/fitz-logo.svg';
 ---
 <div class="navbar max-w-[90rem]">
@@ -15,7 +15,7 @@ import FitzLogo from 'src/assets/images/fitz-logo.svg';
       <label tabindex={0} class="btn btn-ghost lg:hidden">
         <Bars3 height={"1.25rem"} width={"1.25rem"} />
       </label>
-      <ul tabindex={0} class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+      <ul tabindex={0} class="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <li>
           <a href="https://github.com/Fitzpa">
             <img src={GithubLogo.src} width="25px" height="25px" alt="Github Logo" />
@@ -24,8 +24,8 @@ import FitzLogo from 'src/assets/images/fitz-logo.svg';
         <li><a href="/blog">Blog</a></li>
       </ul>
     </div>                             
-    <a href="https://github.com/Fitzpa" class="btn btn-sm btn-circle btn-outline hidden sm:inline-block mr-2 relative z-0">
-       <img src={GithubLogo.src} width={GithubLogo.width} height={GithubLogo.height} alt="Github Logo" class="relative z-10" />
+    <a href="https://github.com/Fitzpa" class="btn btn-sm btn-circle bg-opacity-0 hover:bg-opacity-100 hidden sm:inline-block mr-2 relative z-0">
+       <img src={GithubLogo.src} width={GithubLogo.width} height={GithubLogo.height} alt="Github Logo" class="relative z-10"/>
     </a>
   </div>
 </div>
