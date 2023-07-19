@@ -1,12 +1,11 @@
 @font-face {
-  font-family: "BerkaLight";
-  src: url("../assets/fonts/BerkaLight9YGyn.eot");
-  src:
-    url("../assets/fonts/BerkaLight9YGyn.eot") format("embedded-opentype"),
-    url("../assets/fonts/BerkaLight9YGyn.woff2") format("woff2"),
-    url("../assets/fonts/BerkaLight9YGyn.woff") format("woff"),
-    url("../assets/fonts/BerkaLight9YGyn.ttf") format("truetype"),
-    url("../assets/fonts/BerkaLight9YGyn.svg#BerkaLight9YGyn") format("svg");
+  font-family: 'BerkaLight';
+  src: url('../assets/fonts/BerkaLight9YGyn.eot');
+  src: url('../assets/fonts/BerkaLight9YGyn.eot') format('embedded-opentype'),
+    url('../assets/fonts/BerkaLight9YGyn.woff2') format('woff2'),
+    url('../assets/fonts/BerkaLight9YGyn.woff') format('woff'),
+    url('../assets/fonts/BerkaLight9YGyn.ttf') format('truetype'),
+    url('../assets/fonts/BerkaLight9YGyn.svg#BerkaLight9YGyn') format('svg');
   font-display: swap;
 }
 @tailwind base;
@@ -22,24 +21,24 @@
 @layer utilities {
   .dot-separated > *:nth-child(n + 2)::before {
     font-size: 0.9rem;
-    content: "•";
+    content: '•';
     margin: 0 0.5rem;
   }
   .container {
     @apply mx-auto max-w-[728px] p-5;
   }
 }
-* {
-  font-family: "BerkaLight";
-}
-body {
+main {
   max-width: 90rem;
+}
+
+body {
   background-color: #121120;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cloud-gradient {
